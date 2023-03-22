@@ -1,4 +1,4 @@
-# **XRPL-Solvency - Local ring proof generation and verification environment**
+# **XRPL Solvency - Local ring proof generation and verification environment**
 
 This executable developed in python during the **PBWS 2023 hackathon** is the local environnement to create ring signature for XRPL solvency. 
 
