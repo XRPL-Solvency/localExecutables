@@ -11,14 +11,14 @@ In our solution we use ring signature to give you access to proof of solvency wh
 
 ## **Configuration to create your proof** 📝
 
-1. Go on our [website](https://web-app-virid-theta.vercel.app).
+1. Go on our [website](https://web-app-wfog.vercel.app/).
 2. On the generate Proof page click on download.
 3. Open ring_proof.exe and pass the arguments for your signature.
 4. Your done, you have minted your SBT !!!
 
 ## **Configuration to verify a proof** 📝
 
-1. Go on our [website](https://web-app-virid-theta.vercel.app).
+1. Go on our [website](https://web-app-wfog.vercel.app/).
 2. On the verify Proof page click on download.
 3. Open ring_proof_verify.exe and pass the arguments for the proof you want to verify.
 4. Your done, you have verify a proof !!!
