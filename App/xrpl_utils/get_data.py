@@ -6,7 +6,7 @@
 #   - get_y_from_x -> This function compute the y coordinate by passing it the x coordinate (public key on XRPL)
 import requests
 import json
-from ecdsa import curves, ecdsa
+from ecdsa import ecdsa
 from xrpl.utils import xrp_to_drops
 
 url = "	https://s.altnet.rippletest.net:51234"

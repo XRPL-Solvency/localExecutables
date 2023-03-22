@@ -20,8 +20,7 @@ class App(QWidget):
 
     def initUI(self):
         self.setWindowTitle(self.title)
-        self.setGeometry(self.left, self.top, self.width, self.height)
-
+        
         # Create labels
         label1 = QLabel('Secret key to sign:', self)
         label1.move(20, 20)

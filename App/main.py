@@ -1,10 +1,10 @@
 # This script imports all others. It then generates the proof and stores it on ipfs. The proof is then associated to an NFT, the URI being the ipfs link.
-from ring_signature.hackyaosring import haosring_sign
-import requests
-from get_data.get_data import getRing
-from get_data.getPoints import getPoints,getAccountBalance
-from get_data.mint_nft import mintNFT
 
+import requests
+from xrpl_utils.get_data import getRing
+from xrpl_utils.getPoints import getPoints,getAccountBalance
+from xrpl_utils.mint_nft import mintNFT
+from ring_signature.hackyaosring import haosring_sign
 # function to send data to ipfs using infura gateway
 def sendToIpfs(data):
     files = {

@@ -1,14 +1,14 @@
 import sys
 from random import randint
 from py_ecc.secp256k1.secp256k1 import add, multiply, inv, N, P, G, ecdsa_raw_recover
-from utils import hashs, tobe256
-from ecdsa2 import pubkey_to_ethaddr
+from ring_signature.utils import hashs, tobe256
+from ring_signature.ecdsa2 import pubkey_to_ethaddr
 
 
 #assert False == "Do not use, use altbn128"
 
 safe_ord = ord if sys.version_info.major == 2 else lambda x: x if isinstance(x, int) else ord(x)
-bytes_to_int = lambda x: reduce(lambda o, b: (o << 8) + safe_ord(b), [0] + list(x))
+#bytes_to_int = lambda x: reduce(lambda o, b: (o << 8) + safe_ord(b), [0] + list(x))
 hashsn = lambda *x: hashs(*x) % N
 hashpn = lambda *x: hashsn(*[item for sublist in x for item in sublist])
 randsn = lambda: randint(1, N - 1)

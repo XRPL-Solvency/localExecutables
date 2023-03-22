@@ -3,9 +3,7 @@
 
 from PyQt5.QtWidgets import QApplication,QMessageBox, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
 import ast
-import sys
-sys.path.append('../ring_signature')
-from hackyaosring import haosring_check
+from ring_signature.hackyaosring import haosring_check
 class ProofApp(QWidget):
     def __init__(self):
         super().__init__()
